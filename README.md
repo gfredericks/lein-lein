@@ -7,7 +7,7 @@ A Leiningen plugin for running Leiningen tasks.
 Add `[lein-lein "0.1.0"]` to the `:plugins` vector of your
 `:user` profile or `project.clj`.
 
-Then use `lein lein` to run leiningen tasks, for example
+Then use `lein lein` to run leiningen tasks, for example:
 
 ```
 $ lein lein version

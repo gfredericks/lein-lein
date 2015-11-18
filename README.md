@@ -65,6 +65,42 @@ A task that sleeps for a specified number of milliseconds.
 $ lein sleep 5000
 ```
 
+## `lein throw`
+
+A task that throws an exception.
+
+```
+$ lein throw oops something bad happened
+java.lang.Exception: The throw task threw an exception: oops something bad happened
+ at leiningen.throw$throw.doInvoke (throw.clj:13)
+    clojure.lang.RestFn.invoke (RestFn.java:486)
+    clojure.lang.Var.invoke (Var.java:401)
+    clojure.lang.AFn.applyToHelper (AFn.java:171)
+    clojure.lang.Var.applyTo (Var.java:700)
+    clojure.core$apply.invoke (core.clj:632)
+    leiningen.core.main$partial_task$fn__6030.doInvoke (main.clj:261)
+    clojure.lang.RestFn.applyTo (RestFn.java:139)
+    clojure.lang.AFunction$1.doInvoke (AFunction.java:29)
+    clojure.lang.RestFn.applyTo (RestFn.java:137)
+    clojure.core$apply.invoke (core.clj:632)
+    leiningen.core.main$apply_task.invoke (main.clj:311)
+    leiningen.core.main$resolve_and_apply.invoke (main.clj:317)
+    leiningen.core.main$_main$fn__6096.invoke (main.clj:390)
+    leiningen.core.main$_main.doInvoke (main.clj:383)
+    clojure.lang.RestFn.invoke (RestFn.java:482)
+    clojure.lang.Var.invoke (Var.java:401)
+    clojure.lang.AFn.applyToHelper (AFn.java:171)
+    clojure.lang.Var.applyTo (Var.java:700)
+    clojure.core$apply.invoke (core.clj:630)
+    clojure.main$main_opt.invoke (main.clj:316)
+    clojure.main$main.doInvoke (main.clj:421)
+    clojure.lang.RestFn.invoke (RestFn.java:551)
+    clojure.lang.Var.invoke (Var.java:419)
+    clojure.lang.AFn.applyToHelper (AFn.java:186)
+    clojure.lang.Var.applyTo (Var.java:700)
+    clojure.main.main (main.java:37)
+```
+
 ## License
 
 Copyright © 2015 Gary Fredericks

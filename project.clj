@@ -1,4 +1,4 @@
-(defproject lein-lein "0.2.0-SNAPSHOT"
+(defproject lein-lein "0.2.0"
   :description "A collection of Leiningen plugins for doing all sorts of useful things"
   :url "https://github.com/gfredericks/lein-lein"
   :license {:name "Eclipse Public License"

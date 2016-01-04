@@ -1,9 +1,11 @@
 (ns leiningen.hang
-  "Hangs the Leiningen process.")
+  "Hangs the Leiningen process."
+  (:require [lein-lein.common :as c]))
 
 (defn ^:no-project-needed hang
   "Hangs the Leiningen process.
 
 USAGE: lein hang"
   [_project]
-  (deref (promise)))
+  (when c/on
+    (deref (promise))))

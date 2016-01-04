@@ -101,6 +101,22 @@ java.lang.Exception: The throw task threw an exception: oops something bad happe
     clojure.main.main (main.java:37)
 ```
 
+## `lein off`
+
+A task that disables any future lein-lein task.
+
+```
+$ lein do off, echo nope
+```
+
+## `lein on`
+
+A task that enables any future lein-lein task.
+
+```
+$ lein do off, echo nope, on, echo yep
+```
+
 ## License
 
 Copyright © 2015 Gary Fredericks
